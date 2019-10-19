@@ -5,13 +5,15 @@
     <title>My-Resume</title>
     <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="row">
     <div class="column">
         <div class="header">
-            <h1>Chittapon Leechaiyapornkul</h1>
-            <h3>/Web Developer/</h3>
+            <h1 id="newName">Chittapon Leechaiyapornkul</h1>
+            <h3>Web Developer</h3>
+            <button type="button" class="buttonName" onclick="changeName()">คลิกเพื่อเปลี่ยนชื่อ</button>
         </div>
         <div>
             <!--<img src="profilepic.jpg" alt="Profile-pic">-->
@@ -34,14 +36,14 @@
         <div class="transbox">
             <div class="intransbox">
                 <h3>Skill</h3>
-                <ul class="a">
+                <ul id="mySkill">
                     <li>HTML/CSS</li>
                     <li>Javascript</li>
                     <li>MySQL</li>
                     <li>PHP</li>
                 </ul>
                 <input type="text" id="myInput" placeholder="เพิ่ม skill ที่นี่">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" onclick="addSkill()">
             </div>    
         </div>
     </dive>
