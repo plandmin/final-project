@@ -1,5 +1,4 @@
 body {
-    height: 100%;
     background-image: url("bg-1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -33,16 +32,6 @@ body {
     color: #000000;
     font-family: 'Bitter', serif;
     font-weight: 700;
-}
-
-img {
-    border-radius: 8px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
 }
 
 .info {
